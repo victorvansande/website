@@ -54,6 +54,13 @@ Blokken gebruiken `.hub-block` + kleurklasse (`hb-white/gold/blue/pink/green/cta
 - **Zoekindex** bevat hub-blokken (via `data-search-title` / `data-search-icon`), FAQ, huisreglement en Wat-als-scenario's.
 - **Zen-modus** verbergt afleiding maar laat de footer staan.
 
+## Cloudsessies
+
+- Werk op `main` en push naar `main`, net als lokaal. Krijgt de sessie een eigen branch toegewezen (bv. `main-xxxxx`), dan toch naar `main` pushen: zo wil Victor het.
+- Aanwezig in de cloud: `python3` (dev-server), ImageMagick + Pillow (foto's), Chromium via Playwright (testen op 375px, licht en donker).
+- Live controleren kan alleen als `gekkoo.victorvansande.workers.dev` bij Allowed domains van de cloudomgeving staat. Anders: deploy opvolgen via de GitHub Actions-run.
+- Oude GitHub-geschiedenis (GitHub Pages-tijdperk, tot juni 2026) staat bewaard op branch `oud-main`.
+
 ## Testen
 
 - Dev-server starten (Windows: launch-config "website" met `serve.ps1`; Linux: `python3 -m http.server 3000`) en in de browser kijken.
